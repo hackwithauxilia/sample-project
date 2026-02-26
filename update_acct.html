@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Decepti Bank Accounts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="checkSession()">
+    <div class="layout">
+        <aside class="sidebar">
+            <h1>Decepti Bank</h1>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li class="active"><a href="accounts.html">Accounts</a></li>
+                <li><a href="statements.html">Statements</a></li>
+                <li><a href="login.html" onclick="logout()">Logout</a></li>
+            </ul>
+        </aside>
+        <div class="main">
+            <header class="topbar">🔒 Secure Session Active</header>
+            <section class="card">
+                <h2>Update Account Details</h2>
+                <input type="text" placeholder="PAN Number" data-risk="low">
+                <input type="text" placeholder="ATM Card Number" data-risk="high">
+                <input type="text" placeholder="CVV" data-risk="high">
+                <button onclick="evaluateSub()">Update</button>
+                <div id="analysisBox" class="hidden"></div>
+            </section>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

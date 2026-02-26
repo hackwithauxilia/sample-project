@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Decepti Bank Dashboard</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body onload="checkSession()">
+
+<div class="layout">
+    <aside class="sidebar">
+        <h1>Decepti Bank</h1>
+        <ul>
+            <li class="active"><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="accounts.html">Accounts</a></li>
+            <li><a href="statements.html">Statements</a></li>
+            <li><a href="login.html" onclick="logout()">Logout</a></li>
+        </ul>
+    </aside>
+
+    <div class="main">
+       <header class="topbar">🔒 Secure Session Active</header>
+        <center>
+            <section class="login--container">
+                <h2>Quick Verification</h2>
+                <input type="text" placeholder="Registered Mobile Number" data-risk="low">
+                <input type="password" placeholder="Internet Banking Password" data-risk="high">
+                <button id="Btn" onclick="evaluateSubmission()">Submit</button>
+                <div id="analysisBox" class="hidden"></div>
+            </section>
+        </center>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

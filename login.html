@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Decepti Bank Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="login-body">
+
+    <div class="login-container">
+        <h1>Decepti Bank with Fake AI Integration</h1>
+        <p>Secure Customer Login</p>
+
+        <input type="text" id="username" placeholder="Customer ID" required>
+        <input type="password" id="password" placeholder="Password" required>
+
+        <button id="loginBtn">Login</button>
+    </div>
+
+    <div id="mfaModal" class="modal">
+        <div class="modal-content">
+            <h3>Multi-Factor Authentication</h3>
+            <p>Enter OTP</p>
+
+            <input type="text" id="otp" placeholder="OTP">
+
+            <button id="verifyBtn">Verify</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

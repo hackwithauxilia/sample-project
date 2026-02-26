@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Decepti Bank Accounts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="checkSession()">
+
+    <div class="layout">
+        <aside class="sidebar">
+            <h1>Decepti Bank</h1>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li class="active"><a href="accounts.html">Accounts</a></li>
+                <li><a href="statements.html">Statements</a></li>
+                <li><a href="login.html" onclick="logout()">Logout</a></li>
+            </ul>
+        </aside>
+
+        <div class="main">
+            <header class="topbar">🔒 Secure Session Active</header>
+            <section class="card">
+                <h2>Existing Accounts</h2>
+                <p>Account Number: xxxx-xxxx-xxxx-5100</p>
+                <p>Account Holder Name: Amy James</p>
+                <p>IFSC: HDFC0006561</p>
+                <p>Branch Name: Chennai Main Branch</p>
+                <p>Account Type: Savings</p>
+                <button onclick="goToUpdateAccount()">Update Account</button>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
