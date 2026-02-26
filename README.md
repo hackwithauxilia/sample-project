@@ -44,7 +44,7 @@ All pages are protected using session validation.
 - Event-driven navigation
 - No backend (frontend simulation alone)
 
-## Security Simulation Concepts Demonstrated
+### Security Simulation Concepts Demonstrated
 - Authentication flow control
 - Session validation
 - Multi-step verification
